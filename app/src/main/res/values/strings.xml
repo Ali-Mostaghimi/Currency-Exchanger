@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">CurrencyExchanger</string>
+
+    // Error
+    <string name="accessDenied">accessDenied</string>
+    <string name="networkError">networkError</string>
+    <string name="notFound">notFound</string>
+    <string name="serviceUnavailable">serviceUnavailable</string>
+    <string name="unknownError">unknownError</string>
+
 </resources>
