@@ -4,7 +4,6 @@ import com.github.alimostaghimi.currencyexchanger.data.datasource.local.preferen
 import javax.inject.Inject
 import javax.inject.Singleton
 
-@Singleton
 class TransactionCountPreferencesImpl @Inject constructor(private val prefStorage: PrefStorage) : TransactionCountPreferences {
 
     companion object{

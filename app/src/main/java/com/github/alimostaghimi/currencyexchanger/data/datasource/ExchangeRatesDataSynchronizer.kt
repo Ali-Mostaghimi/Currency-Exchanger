@@ -13,8 +13,10 @@ import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
+const val ExchangeRates_Syncing_Period = 5 * 1000L // 5 second
+
 class ExchangeRatesDataSynchronizer (
-    private val period: Long,
+    private val period: Long = ExchangeRates_Syncing_Period,
     private val dispatcher: CoroutineDispatcher
 ) : DataSynchronizer<Any, ExchangeRatesResponse> {
 

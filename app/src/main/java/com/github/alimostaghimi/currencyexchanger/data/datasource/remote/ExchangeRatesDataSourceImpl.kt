@@ -13,7 +13,6 @@ class ExchangeRatesDataSourceImpl @Inject constructor(
 
     override fun exchangeRatesFlow(): Flow<ExchangeRatesResponse> =
         ratesDataSynchronizer.syncData {
-            // TODO: move this api access key to gradle
             exchangeRatesApiService.getLatestRates(BuildConfig.API_ACCESS_KEY)
         }
 }

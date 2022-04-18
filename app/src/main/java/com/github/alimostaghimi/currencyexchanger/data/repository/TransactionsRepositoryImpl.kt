@@ -11,4 +11,9 @@ class TransactionsRepositoryImpl @Inject constructor(private val transactionCoun
     }
 
     override fun getTransactionCount(): Int = transactionCountPref.getTransactionCount()
+
+    override fun increaseTransactionCount() {
+        val previousTransactionCount = transactionCountPref.getTransactionCount()
+        transactionCountPref.setTransactionCount(previousTransactionCount + 1)
+    }
 }
