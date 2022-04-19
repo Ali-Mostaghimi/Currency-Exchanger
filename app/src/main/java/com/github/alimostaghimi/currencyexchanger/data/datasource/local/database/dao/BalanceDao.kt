@@ -12,14 +12,14 @@ interface BalanceDao {
     fun getAllCurrencies(): Flow<List<Currency>>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun insertCurrency(currency: Currency)
+    suspend fun insertCurrency(currency: Currency)
 
     @Update
-    fun updateCurrency(currency: Currency)
+    suspend fun updateCurrency(currency: Currency)
 
     @Delete
-    fun deleteCurrency(currency: Currency)
+    suspend fun deleteCurrency(currency: Currency)
 
-    @Query("SELECT amount FROM $Balance_Table_Name WHERE currencyUnit = :currencyUnit")
-    fun getCurrencyAmount(currencyUnit: String): Double
+    @Query("SELECT amount FROM $Balance_Table_Name WHERE currencyUnit = :currencyUnit LIMIT 1")
+    suspend fun getCurrencyAmount(currencyUnit: String): Double?
 }

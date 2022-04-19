@@ -20,6 +20,7 @@ import com.github.alimostaghimi.currencyexchanger.domain.repository.ExchangeRate
 import com.github.alimostaghimi.currencyexchanger.domain.repository.TransactionsRepository
 import com.github.alimostaghimi.currencyexchanger.domain.usecase.BalanceUsecase
 import com.github.alimostaghimi.currencyexchanger.domain.usecase.GetRatesUsecase
+import com.github.alimostaghimi.currencyexchanger.domain.usecase.GetTransactionCountUsecase
 import com.github.alimostaghimi.currencyexchanger.domain.usecase.TransactionUsecase
 import com.github.alimostaghimi.currencyexchanger.domain.usecase.commission.CommissionCalculator
 import com.github.alimostaghimi.currencyexchanger.domain.usecase.commission.DefaultCommissionCalculator
@@ -48,10 +49,16 @@ class HomeFragmentModule {
         fragment: HomeFragment,
         getRatesUsecase: GetRatesUsecase,
         transactionUsecase: TransactionUsecase,
-        balanceUsecase: BalanceUsecase
+        balanceUsecase: BalanceUsecase,
+        getTransactionCountUsecase: GetTransactionCountUsecase
     ): HomeViewModel = ViewModelProvider(fragment,
         ViewModelProviderFactory(HomeViewModel::class) {
-            HomeViewModel(getRatesUsecase = getRatesUsecase, transactionUsecase = transactionUsecase, balanceUsecase = balanceUsecase)
+            HomeViewModel(
+                getRatesUsecase = getRatesUsecase,
+                transactionUsecase = transactionUsecase,
+                balanceUsecase = balanceUsecase,
+                getTransactionCountUsecase = getTransactionCountUsecase
+            )
         }
     ).get(HomeViewModel::class.java)
 
@@ -65,7 +72,11 @@ class HomeFragmentModule {
 
     @Provides
     fun provideCommissionCalculator(): CommissionCalculator =
-        DefaultCommissionCalculator(initialCommissionCalculations =  setOf(FirstFiveTransactionsIsCommissionFree()))
+        DefaultCommissionCalculator(
+            initialCommissionCalculations = setOf(
+                FirstFiveTransactionsIsCommissionFree()
+            )
+        )
 
     @Provides
     fun provideTransactionCount(transactionCountPreferences: TransactionCountPreferencesImpl): TransactionCountPreferences =

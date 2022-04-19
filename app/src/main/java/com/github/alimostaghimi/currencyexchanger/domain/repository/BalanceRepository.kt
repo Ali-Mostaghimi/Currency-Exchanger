@@ -7,13 +7,13 @@ interface BalanceRepository {
 
     fun getAllCurrencies(): Flow<List<Currency>>
 
-    fun insertCurrency(currency: Currency)
+    suspend fun insertCurrency(currency: Currency)
 
-    fun updateCurrency(currency: Currency)
+    suspend fun updateCurrency(currency: Currency)
 
-    fun updateCurrencies(vararg currency: Currency)
+    suspend fun updateCurrencies(vararg currency: Currency)
 
-    fun deleteCurrency(currency: Currency)
+    suspend fun deleteCurrency(currency: Currency)
 
-    fun getCurrencyAmount(currencyUnit: String): Double
+    suspend fun getCurrencyAmount(currencyUnit: String): Double?
 }

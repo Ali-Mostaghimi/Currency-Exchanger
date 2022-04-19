@@ -3,8 +3,33 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Ali/Desktop/CurrencyExchanger/app/src/main/res/drawable-hdpi/bottom_rounded_16_white_rect.xml" value="0.142" />
+        <entry key="..\:/Users/Ali/Desktop/CurrencyExchanger/app/src/main/res/drawable-v24/bottom_rounded_16_error_red_rect.xml" value="0.142" />
+        <entry key="..\:/Users/Ali/Desktop/CurrencyExchanger/app/src/main/res/drawable/background_selector_edit_text_currency.xml" value="0.142" />
+        <entry key="..\:/Users/Ali/Desktop/CurrencyExchanger/app/src/main/res/drawable/bottom_rounded_14_success_green_rect.xml" value="0.142" />
+        <entry key="..\:/Users/Ali/Desktop/CurrencyExchanger/app/src/main/res/drawable/bottom_rounded_14_white_rect.xml" value="0.142" />
+        <entry key="..\:/Users/Ali/Desktop/CurrencyExchanger/app/src/main/res/drawable/bottom_rounded_16_error_red_rect.xml" value="0.142" />
+        <entry key="..\:/Users/Ali/Desktop/CurrencyExchanger/app/src/main/res/drawable/bottom_rounded_16_loading_grey_rect.xml" value="0.142" />
+        <entry key="..\:/Users/Ali/Desktop/CurrencyExchanger/app/src/main/res/drawable/bottom_rounded_16_success_green_rect.xml" value="0.142" />
+        <entry key="..\:/Users/Ali/Desktop/CurrencyExchanger/app/src/main/res/drawable/drop_down.xml" value="0.142" />
+        <entry key="..\:/Users/Ali/Desktop/CurrencyExchanger/app/src/main/res/drawable/ic_arrow_bottom.xml" value="0.142" />
+        <entry key="..\:/Users/Ali/Desktop/CurrencyExchanger/app/src/main/res/drawable/rounded_14_blue_rect.xml" value="0.142" />
+        <entry key="..\:/Users/Ali/Desktop/CurrencyExchanger/app/src/main/res/drawable/rounded_14_with_border_blue_rece.xml" value="0.142" />
+        <entry key="..\:/Users/Ali/Desktop/CurrencyExchanger/app/src/main/res/drawable/top_rounded_14_white_rect.xml" value="0.142" />
+        <entry key="..\:/Users/Ali/Desktop/CurrencyExchanger/app/src/main/res/drawable/top_rounded_24_white_rect.xml" value="0.142" />
         <entry key="..\:/Users/Ali/Desktop/CurrencyExchanger/app/src/main/res/layout/activity_main.xml" value="0.15760869565217392" />
-        <entry key="..\:/Users/Ali/Desktop/CurrencyExchanger/app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="..\:/Users/Ali/Desktop/CurrencyExchanger/app/src/main/res/layout/currency_exchanger_layout.xml" value="0.25" />
+        <entry key="..\:/Users/Ali/Desktop/CurrencyExchanger/app/src/main/res/layout/currency_unit_spinner_collapsed_item.xml" value="0.22" />
+        <entry key="..\:/Users/Ali/Desktop/CurrencyExchanger/app/src/main/res/layout/currency_unit_spinner_expanded_item.xml" value="0.14" />
+        <entry key="..\:/Users/Ali/Desktop/CurrencyExchanger/app/src/main/res/layout/currency_unit_spinner_item.xml" value="0.33" />
+        <entry key="..\:/Users/Ali/Desktop/CurrencyExchanger/app/src/main/res/layout/error_layout.xml" value="0.25" />
+        <entry key="..\:/Users/Ali/Desktop/CurrencyExchanger/app/src/main/res/layout/fragment_home.xml" value="0.21" />
+        <entry key="..\:/Users/Ali/Desktop/CurrencyExchanger/app/src/main/res/layout/loading_layout.xml" value="0.22" />
+        <entry key="..\:/Users/Ali/Desktop/CurrencyExchanger/app/src/main/res/layout/row_item_my_balance.xml" value="0.33" />
+        <entry key="..\:/Users/Ali/Desktop/CurrencyExchanger/app/src/main/res/layout/row_item_total_balance_text.xml" value="0.25" />
+        <entry key="..\:/Users/Ali/Desktop/CurrencyExchanger/app/src/main/res/layout/success_layout.xml" value="0.10778985507246377" />
+        <entry key="..\:/Users/Ali/Desktop/CurrencyExchanger/app/src/main/res/layout/total_balance_text_view_item.xml" value="0.33" />
+        <entry key="..\:/Users/Ali/Desktop/CurrencyExchanger/app/src/main/res/layout/transaction_result_dialog.xml" value="0.22" />
       </map>
     </option>
   </component>

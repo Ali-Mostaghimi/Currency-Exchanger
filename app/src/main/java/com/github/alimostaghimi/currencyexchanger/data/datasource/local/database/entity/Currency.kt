@@ -7,12 +7,12 @@ import com.github.alimostaghimi.currencyexchanger.data.datasource.local.database
 
 
 @Entity(tableName = Balance_Table_Name)
-class Currency(
+open class Currency(
 
     @PrimaryKey
     @ColumnInfo(name = "currencyUnit")
-    val currencyUnit: String,
+    open val currencyUnit: String,
 
     @ColumnInfo(name = "amount")
-    val amount: Double
+    open val amount: Double
 )

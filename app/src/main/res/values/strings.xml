@@ -1,11 +1,34 @@
 <resources>
-    <string name="app_name">CurrencyExchanger</string>
+    <string name="app_name">Currency Exchanger</string>
 
-    // Error
-    <string name="accessDenied">accessDenied</string>
-    <string name="networkError">networkError</string>
-    <string name="notFound">notFound</string>
-    <string name="serviceUnavailable">serviceUnavailable</string>
-    <string name="unknownError">unknownError</string>
+    <!--Error-->
+    <string name="accessDenied">AccessDenied</string>
+    <string name="networkError">Connection lost</string>
+    <string name="notFound">NotFound</string>
+    <string name="serviceUnavailable">ServiceUnavailable</string>
+    <string name="unknownError">UnknownError</string>
+
+    <!--home fragment-->
+    <string name="currency_exchange_title">Currency Exchange</string>
+    <string name="exchange_currency_submit_button_text">Submit</string>
+    <string name="total_balance_title">Total Balance</string>
+
+    <!--states-->
+    <string name="loading_message">Fetching data</string>
+    <string name="success_message">Everything is up to date</string>
+    <string name="retry_button_text">retry</string>
+
+
+    <!--transaction errors-->
+    <string name="transaction_result_error_rates_are_not_up_to_date">Rates are not up to date</string>
+    <string name="transaction_result_error_balance_is_not_enough">Balance is not enough</string>
+    <string name="transaction_result_error_source_unit_is_not_selected">Please select sell currency unit</string>
+    <string name="transaction_result_error_destination_unit_is_not_selected">Please select buy currency unit</string>
+    <string name="transaction_result_error_amount_of_transaction_is_not_specified">Please enter amount to sell</string>
+    <string name="transaction_result_error_can_not_convert_the_same_currencies">Can not convert the same currencies</string>
+
+    <!--transaction dialog-->
+    <string name="transaction_success_currency_converted_dialog_title">Currency converted</string>
+    <string name="transaction_success_currency_converted_dialog_done_text">Done</string>
 
 </resources>

@@ -19,9 +19,6 @@ inline fun <reified T, R> Flow<ServerBaseResponse>.toResult(
             return@let BaseResponse.Success(mapper.map(it))
         } ?: BaseResponse.Error(error = BaseError.Unknown("unable to cast"))
     }
-//    .onStart {
-//        emit(BaseResponse.Loading)
-//    }
     .catch {
         emit(BaseResponse.Error(errorHandler.getError(it)))
     }

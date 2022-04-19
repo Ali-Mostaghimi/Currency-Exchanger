@@ -8,6 +8,8 @@ import com.github.alimostaghimi.currencyexchanger.data.datasource.remote.model.E
 import com.github.alimostaghimi.currencyexchanger.di.modules.NetworkModule
 import com.github.alimostaghimi.currencyexchanger.di.modules.StorageModule
 import com.github.alimostaghimi.currencyexchanger.domain.error.ErrorHandler
+import com.github.alimostaghimi.currencyexchanger.domain.usecase.GetRatesUsecase
+import com.github.alimostaghimi.currencyexchanger.domain.usecase.TransactionUsecase
 import com.github.alimostaghimi.currencyexchanger.domain.usecase.commission.CommissionCalculationStrategy
 import dagger.BindsInstance
 import dagger.Component
