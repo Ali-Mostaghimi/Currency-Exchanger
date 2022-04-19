@@ -32,7 +32,7 @@ class BalanceRepositoryImpl @Inject constructor(private val databaseService: Dat
     override suspend fun updateCurrencies(vararg currency: Currency) {
         databaseService.withTransaction {
             for (c in currency) {
-                balanceDao.insertCurrency(c)
+                updateCurrency(c)
             }
         }
     }

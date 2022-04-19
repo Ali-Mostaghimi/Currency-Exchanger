@@ -26,6 +26,7 @@ class StorageModule {
         ).addCallback(object : RoomDatabase.Callback(){
             override fun onCreate(db: SupportSQLiteDatabase) {
                 super.onCreate(db)
+                // add default 1000 EUR to balance for first launch
                 db.execSQL("INSERT INTO balance VALUES (\'EUR\', 1000);")
             }
         }).build()

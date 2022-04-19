@@ -14,12 +14,7 @@ class GetRatesUsecase @Inject constructor(
     @NamedExchangeRatesRepository(ExchangeRatesRepositoryType.ActualImpl)
     private val rateExchangeRatesRepository: ExchangeRatesRepository
 ) {
-    var lastRatesResponse: BaseResponse<RatesWrapper>? = null
-        private set
 
     fun getRates(): Flow<BaseResponse<RatesWrapper>> =
         rateExchangeRatesRepository.getExchangeRates()
-            .onEach {
-                lastRatesResponse = it
-            }
 }

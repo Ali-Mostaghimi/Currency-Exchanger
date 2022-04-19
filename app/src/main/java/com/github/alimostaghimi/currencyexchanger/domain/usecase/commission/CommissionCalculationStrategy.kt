@@ -1,5 +1,6 @@
 package com.github.alimostaghimi.currencyexchanger.domain.usecase.commission
 
+// Each strategy should work with specific types of CommissionRequest
 interface CommissionCalculationStrategy {
     fun calculateCommission(request: CommissionRequest): CommissionResult
 }

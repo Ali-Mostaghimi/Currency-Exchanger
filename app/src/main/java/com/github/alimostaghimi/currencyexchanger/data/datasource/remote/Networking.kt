@@ -58,7 +58,6 @@ object Networking {
             .build()
 }
 
-//TODO: make this generic for another responses too
 class ExchangeRatesResponseDeserializer : JsonDeserializer<ExchangeRatesResponse> {
     @Throws(JsonParseException::class)
     override fun deserialize(

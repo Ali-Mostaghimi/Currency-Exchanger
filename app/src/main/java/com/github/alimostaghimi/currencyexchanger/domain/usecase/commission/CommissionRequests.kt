@@ -9,5 +9,5 @@ interface CommissionWithAmountOfTransactionRequest : CommissionRequest {
     var amountOfTransactionInEuro: Int
 }
 
-interface CommissionWithAmountAndTransactionContRequest:
+interface CommissionWithAmountAndTransactionCountRequest:
     CommissionWithCountOfTransactionRequest, CommissionWithAmountOfTransactionRequest

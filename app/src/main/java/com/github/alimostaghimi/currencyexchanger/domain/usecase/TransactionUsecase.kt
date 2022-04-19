@@ -12,7 +12,6 @@ import com.github.alimostaghimi.currencyexchanger.domain.usecase.commission.Comm
 import com.github.alimostaghimi.currencyexchanger.domain.usecase.commission.CommissionRequest
 import java.util.*
 import javax.inject.Inject
-import javax.inject.Singleton
 
 class TransactionUsecase @Inject constructor(
     private val balanceRepository: BalanceRepository,
@@ -46,7 +45,7 @@ class TransactionUsecase @Inject constructor(
             if (lastRatesResponse is BaseResponse.Success && (Date().time - lastRatesResponse.data.lastUpdateTimestamp) < ExchangeRates_Syncing_Period) {
                 lastRatesResponse.data.rates
             } else {
-                // rates are not up to data or state is not success
+                // rates are not up to data or BaseResponse State of RateWrapper is not Success
                 return TransactionResult.Error(transactionErrorState = TransactionErrorState.RatesAreNotUpToDated)
             }
 
